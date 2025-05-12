@@ -57,6 +57,7 @@ export function SkillsSection() {
         { name: "Sensor Integration", level: 90 },
         { name: "Microcontrollers", level: 95 },
         { name: "PCBA Repair (L1–L4)", level: 90 },
+
       ],
     }
   ]
@@ -141,7 +142,7 @@ export function SkillsSection() {
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.name}
-              className="space-y-8 p-6 rounded-lg shadow-card bg-background/5"
+              className="space-y-8 p-6 rounded-lg shadow-card shadow-card-hover bg-background/5"
               variants={itemVariants}
               custom={categoryIndex}
               whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
