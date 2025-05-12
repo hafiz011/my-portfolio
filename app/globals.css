@@ -89,12 +89,13 @@
 }
 
 /* Custom shadow classes */
+/* Custom shadow classes */
 .shadow-card {
-  @apply shadow-md hover:shadow-xl transition-shadow duration-300;
+  @apply shadow-md transition-shadow duration-300 hover:shadow-xl;
 }
 
 .shadow-card-hover {
-  @apply shadow-md hover:shadow-xl hover:shadow-primary/20 transition-all duration-300;
+  @apply shadow-md transition-all duration-300 hover:shadow-2xl hover:shadow-primary/30;
 }
 
 .shadow-text {
@@ -110,12 +111,13 @@
 }
 
 .shadow-primary-hover {
-  @apply hover:shadow-lg hover:shadow-primary/30 transition-shadow duration-300;
+  @apply transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/40;
 }
 
 .shadow-header {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Animation classes */
 @keyframes fadeIn {

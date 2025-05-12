@@ -41,30 +41,30 @@ export function AboutSection() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-2xl font-bold mb-4 shadow-text"
             >
-              I'm <span className="text-primary">Md Hafizur Rahman</span>, a .NET Developer & Cybersecurity Specialist
+              I'm <span className="text-yellow-500">Md Hafizur Rahman,</span> a<span className="text-primary"> .NET Developer</span> &<span className="text-blue-400"> Cybersecurity Specialist</span>
             </motion.h3>
             <div className="space-y-4 text-muted-foreground">
               <motion.p custom={0} initial="hidden" animate="visible" variants={paragraphVariants}>
-                I'm a passionate IT professional with expertise in <strong>.NET development</strong>,{" "}
-                <strong>cybersecurity</strong>, and <strong>server administration</strong>. I specialize in building
-                secure and scalable web and IoT solutions using <strong>ASP.NET Core</strong>, <strong>MongoDB</strong>,{" "}
-                <strong>MySQL</strong>, <strong>Microservices</strong>, and cloud platforms like <strong>AWS</strong>{" "}
-                and <strong>Azure</strong>.
+                I'm a passionate IT professional with expertise in <strong className="text-primary">.NET development</strong>,{" "}
+                <strong className="text-blue-400">cybersecurity</strong>, and <strong className="text-yellow-600">server administration</strong>. I specialize in building
+                secure and scalable web and IoT solutions using <strong className="text-primary">ASP.NET Core</strong>, <strong className="text-indigo-500">MongoDB</strong>,{" "}
+                <strong className="text-purple-500">MySQL</strong>, <strong className="text-pink-500">Microservices</strong>, and cloud platforms like <strong className="text-yellow-700">AWS</strong>{" "}
+                and <strong className="text-blue-500">Azure</strong>.
               </motion.p>
               <motion.p custom={1} initial="hidden" animate="visible" variants={paragraphVariants}>
                 With hands-on experience in development and IT operations, I bring a holistic approach to solving
-                technology challenges. My background includes <strong>software engineering</strong>,{" "}
-                <strong>ethical hacking</strong>, <strong>network security</strong>, and{" "}
-                <strong>IoT hardware integration</strong>.
+                technology challenges. My background includes <strong className="text-blue-400">software engineering</strong>,{" "}
+                <strong className="text-red-500">ethical hacking</strong>, <strong className="text-yellow-600">network security</strong>, and{" "}
+                <strong className="text-green-600">IoT hardware integration</strong>.
               </motion.p>
               <motion.p custom={2} initial="hidden" animate="visible" variants={paragraphVariants}>
                 I've worked across corporate IT support and engineering roles, handling everything from web platforms to{" "}
-                <strong>PCBA-level repairs</strong>. I'm passionate about leveraging <strong>AI</strong> and{" "}
-                <strong>automation</strong> to enhance efficiency, security, and user experience.
+                <strong className="text-blue-400">PCBA-level repairs</strong>. I'm passionate about leveraging <strong className="text-blue-500">AI</strong> and{" "}
+                <strong className="text-pink-600">automation</strong> to enhance efficiency, security, and user experience.
               </motion.p>
               <motion.p custom={3} initial="hidden" animate="visible" variants={paragraphVariants}>
-                I continuously improve my skills through platforms like <strong>TryHackMe</strong>, participating in{" "}
-                <strong>CTF challenges</strong>, and researching emerging technologies.
+                I continuously improve my skills through platforms like <strong className="text-red-300">TryHackMe</strong>, participating in{" "}
+                <strong className="text-red-500">CTF challenges</strong>, and researching emerging technologies.
               </motion.p>
             </div>
             <motion.div
@@ -85,7 +85,7 @@ export function AboutSection() {
               <Card className="bg-card hover:border-primary transition-colors hover-lift shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
-                    <CounterUp end={2} suffix="+" />
+                    <CounterUp end={4} suffix="+" />
                   </h4>
                   <p className="text-muted-foreground">Years of Experience</p>
                 </CardContent>
@@ -96,7 +96,7 @@ export function AboutSection() {
               <Card className="bg-card hover:border-primary transition-colors hover-lift shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
-                    <CounterUp end={10} suffix="+" delay={200} />
+                    <CounterUp end={31} suffix="+" delay={200} />
                   </h4>
                   <p className="text-muted-foreground">Projects Completed</p>
                 </CardContent>

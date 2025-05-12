@@ -26,7 +26,7 @@ export default function Home() {
       role: ".NET Developer",
       description:
         "Enthusiastic and versatile IT professional with proven expertise in .NET development, cybersecurity, and server infrastructure.",
-      image: "/placeholder.svg?height=800&width=600",
+      image: "/slide-1.jpg?height=800&width=600",
     },
     {
       title: "Md Hafizur Rahman",
@@ -34,7 +34,7 @@ export default function Home() {
       role: "Cybersecurity Specialist",
       description:
         "Skilled in building secure, scalable web and IoT applications using .NET Core, MongoDB, and cloud platforms.",
-      image: "/placeholder.svg?height=800&width=600",
+      image: "/slide-2.jpg?height=800&width=600",
     },
   ]
 
