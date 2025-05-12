@@ -17,21 +17,48 @@ export function SkillsSection() {
     {
       name: "Development",
       skills: [
-        { name: "C#", level: 90 },
-        { name: ".NET Core", level: 85 },
-        { name: "ASP.NET Core MVC", level: 85 },
-        { name: "Entity Framework", level: 80 },
+        { name: "C#", level: 97 },
+        { name: ".NET", level: 95 },
+        { name: "ASP.NET Core", level: 95 },
+        { name: "Entity Framework", level: 95 },
+        { name: "JavaScript", level: 90 },
+        { name: "React", level: 95 },
+        { name: "C/C++", level: 85 },
       ],
     },
     {
       name: "Databases & Infrastructure",
       skills: [
-        { name: "MongoDB", level: 85 },
-        { name: "MySQL", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "Azure", level: 70 },
+        { name: "MongoDB", level: 95 },
+        { name: "MySQL", level: 90 },
+        { name: "AWS", level: 95 },
+        { name: "Azure", level: 95 },
+        { name: "Docker", level: 90},
+        { name: "VMware ESXi", level: 85 },
+        { name: "Server Administration (Windows, Linux)", level: 95 },
       ],
     },
+    {
+      name: "Cybersecurity",
+      skills: [
+        { name: "Vulnerability Assessment", level: 90 },
+        { name: "Penetration Testing", level: 95 },
+        { name: "privilege escalation", level: 90 },
+        { name: "web application security flaws", level: 95 },
+        { name: "Digital forensics", level: 90 },
+        { name: "Network Security", level: 85 },
+      ],
+    },
+    {
+      name: "Networking & Devices",
+      skills: [
+        { name: "Active Directory", level: 95 },
+        { name: "Firewall Configs", level: 95 },
+        { name: "Sensor Integration", level: 90 },
+        { name: "Microcontrollers", level: 95 },
+        { name: "PCBA Repair (L1–L4)", level: 90 },
+      ],
+    }
   ]
 
   // Animate progress bars when they come into view
