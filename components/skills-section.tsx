@@ -124,9 +124,9 @@ export function SkillsSection() {
   }
 
   return (
-    <section className="py-20 bg-secondary" id="skills" ref={sectionRef}>
-      <div className="container-margin">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+    <section className="py-16 sm:py-20 bg-secondary" id="skills" ref={sectionRef}>
+      <div className="container-margin px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center space-y-3 text-center mb-8 sm:mb-12">
           <AnimatedText as="h2" className="section-subtitle shadow-text">
             My Skills
           </AnimatedText>
@@ -136,7 +136,7 @@ export function SkillsSection() {
         </div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12"
+          className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 mt-10"
           variants={containerVariants}
           initial="hidden"
           animate={controls}
@@ -144,7 +144,7 @@ export function SkillsSection() {
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.name}
-              className="space-y-8 p-6 rounded-lg shadow-card shadow-card-hover bg-background/5"
+              className="space-y-6 p-4 sm:p-6 rounded-xl shadow-card shadow-card-hover bg-background/5"
               variants={itemVariants}
               custom={categoryIndex}
               whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
@@ -162,7 +162,7 @@ export function SkillsSection() {
                     }}
                     transition={{ delay: index * 0.1 + 0.3, duration: 0.5 }}
                   >
-                    <div className="flex justify-between text-sm">
+                    <div className="flex justify-between text-sm flex-wrap gap-x-2">
                       <span className="font-medium">{skill.name}</span>
                       <span>
                         {animationStarted ? (
