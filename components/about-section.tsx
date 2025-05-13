@@ -73,7 +73,7 @@ export function AboutSection() {
               transition={{ duration: 0.5, delay: 0.8 }}
               className="mt-6"
             >
-              <Link href="/about" className="btn-primary hover-lift shadow-primary-hover">
+              <Link href="/about" className="btn-primary hover-lift">
                 More About Me
                 <ArrowRight className="h-4 w-4" />
               </Link>
@@ -81,8 +81,8 @@ export function AboutSection() {
           </AnimatedSection>
 
           <div className="grid grid-cols-2 gap-6">
-            <AnimatedSection delay={100} direction="scale" duration={0.6}>
-              <Card className="bg-card hover:border-primary transition-colors hover-lift shadow-card-hover">
+            <AnimatedSection delay={100} direction="scale" duration={0.3}>
+              <Card className="bg-card transition-colors shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
                     <CounterUp end={4} suffix="+" />
@@ -92,8 +92,8 @@ export function AboutSection() {
               </Card>
             </AnimatedSection>
 
-            <AnimatedSection delay={200} direction="scale" duration={0.6}>
-              <Card className="bg-card hover:border-primary transition-colors hover-lift shadow-card-hover">
+            <AnimatedSection delay={200} direction="scale" duration={0.3}>
+              <Card className="bg-card transition-colors shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
                     <CounterUp end={31} suffix="+" delay={200} />
@@ -103,8 +103,8 @@ export function AboutSection() {
               </Card>
             </AnimatedSection>
 
-            <AnimatedSection delay={300} direction="scale" duration={0.6}>
-              <Card className="bg-card hover:border-primary transition-colors hover-lift shadow-card-hover">
+            <AnimatedSection delay={300} direction="scale" duration={0.3}>
+              <Card className="bg-card transition-colors shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
                     <CounterUp end={5} suffix="+" delay={400} />
@@ -114,8 +114,8 @@ export function AboutSection() {
               </Card>
             </AnimatedSection>
 
-            <AnimatedSection delay={400} direction="scale" duration={0.6}>
-              <Card className="bg-card hover:border-primary transition-colors hover-lift shadow-card-hover">
+            <AnimatedSection delay={400} direction="scale" duration={0.3}>
+              <Card className="bg-card transition-colors shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
                     <CounterUp end={3} suffix="+" delay={600} />

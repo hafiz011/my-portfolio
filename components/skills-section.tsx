@@ -14,53 +14,55 @@ export function SkillsSection() {
   const isInView = useInView(sectionRef, { once: false, amount: 0.3 })
 
   const skillCategories = [
-    {
-      name: "Development",
-      skills: [
-        { name: "C#", level: 97 },
-        { name: ".NET", level: 95 },
-        { name: "ASP.NET Core", level: 95 },
-        { name: "Entity Framework", level: 95 },
-        { name: "JavaScript", level: 90 },
-        { name: "React", level: 95 },
-        { name: "C/C++", level: 85 },
-      ],
-    },
-    {
-      name: "Databases & Infrastructure",
-      skills: [
-        { name: "MongoDB", level: 95 },
-        { name: "MySQL", level: 90 },
-        { name: "AWS", level: 95 },
-        { name: "Azure", level: 95 },
-        { name: "Docker", level: 90},
-        { name: "VMware ESXi", level: 85 },
-        { name: "Server Administration (Windows, Linux)", level: 95 },
-      ],
-    },
-    {
-      name: "Cybersecurity",
-      skills: [
-        { name: "Vulnerability Assessment", level: 90 },
-        { name: "Penetration Testing", level: 95 },
-        { name: "privilege escalation", level: 90 },
-        { name: "web application security flaws", level: 95 },
-        { name: "Digital forensics", level: 90 },
-        { name: "Network Security", level: 85 },
-      ],
-    },
-    {
-      name: "Networking & Devices",
-      skills: [
-        { name: "Active Directory", level: 95 },
-        { name: "Firewall Configs", level: 95 },
-        { name: "Sensor Integration", level: 90 },
-        { name: "Microcontrollers", level: 95 },
-        { name: "PCBA Repair (L1–L4)", level: 90 },
+  {
+    name: "Full Stack Development",
+    skills: [
+      { name: "C#", level: 97 },
+      { name: ".NET & ASP.NET Core", level: 95 },
+      { name: "Entity Framework", level: 94 },
+      { name: "JavaScript", level: 90 },
+      { name: "React", level: 92 },
+      { name: "Razor Pages / Blazor", level: 88 },
+      { name: "Microservices", level: 90 },
+    ],
+  },
+  {
+    name: "Cloud & Infrastructure",
+    skills: [
+      { name: "MongoDB", level: 95 },
+      { name: "MySQL", level: 90 },
+      { name: "Docker & Kubernetes", level: 88 },
+      { name: "AWS", level: 95 },
+      { name: "Azure", level: 94 },
+      { name: "CI/CD (GitHub Actions)", level: 87 },
+      { name: "Linux / Windows Server Admin", level: 96 },
+    ],
+  },
+  {
+    name: "Cybersecurity & DevSecOps",
+    skills: [
+      { name: "Penetration Testing", level: 95 },
+      { name: "Vulnerability Assessment", level: 93 },
+      { name: "Privilege Escalation", level: 91 },
+      { name: "OWASP Top 10", level: 94 },
+      { name: "Digital Forensics", level: 88 },
+      { name: "Network Security", level: 90 },
+      { name: "TryHackMe / CTFs", level: 85 },
+    ],
+  },
+  {
+    name: "IoT & Embedded Systems",
+    skills: [
+      { name: "Sensor Integration", level: 90 },
+      { name: "Microcontrollers (ESP32, Arduino)", level: 95 },
+      { name: "PCBA Repair (L1–L4)", level: 92 },
+      { name: "Embedded C/C++", level: 85 },
+      { name: "MQTT / REST for IoT", level: 88 },
+      { name: "Device Security (MAC/Token Auth)", level: 90 },
+    ],
+  },
+]
 
-      ],
-    }
-  ]
 
   // Animate progress bars when they come into view
   useEffect(() => {

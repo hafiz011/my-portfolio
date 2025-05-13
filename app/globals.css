@@ -94,7 +94,7 @@
 }
 
 .shadow-card-hover {
-  @apply shadow-md hover:shadow-xl hover:shadow-primary/20 transition-all duration-300;
+  @apply shadow-md hover:shadow-xl hover:shadow-primary/30 transition-all duration-300;
 }
 
 .shadow-text {
@@ -106,11 +106,11 @@
 }
 
 .shadow-primary {
-  @apply shadow-md shadow-primary/20;
+  @apply shadow-md shadow-primary/30;
 }
 
 .shadow-primary-hover {
-  @apply hover:shadow-lg hover:shadow-primary/30 transition-shadow duration-300;
+  @apply hover:shadow-lg hover:shadow-primary/40 transition-shadow duration-300;
 }
 
 .shadow-header {
