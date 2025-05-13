@@ -78,7 +78,7 @@ export function Footer() {
                   href="/projects"
                   className="text-muted-foreground hover:text-primary transition-colors hover-lift inline-block"
                 >
-                  Portfolio
+                  Projects
                 </Link>
               </li>
               <li>
