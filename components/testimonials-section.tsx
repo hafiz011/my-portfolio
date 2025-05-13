@@ -23,38 +23,68 @@ export function TestimonialsSection() {
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
   const isMobile = useMobile()
 
-  const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      name: "John Smith",
-      position: "CEO",
-      company: "Tech Innovations",
-      avatar: "/placeholder.svg?height=80&width=80",
-      content:
-        "Working with Hafizur was an excellent experience. His expertise in .NET development and cybersecurity helped us build a secure and scalable application that exceeded our expectations.",
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: "Sarah Johnson",
-      position: "Project Manager",
-      company: "Digital Solutions",
-      avatar: "/placeholder.svg?height=80&width=80",
-      content:
-        "Hafizur's attention to detail and problem-solving skills are impressive. He delivered our project on time and was always available to address any concerns or questions we had.",
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: "Michael Chen",
-      position: "CTO",
-      company: "IoT Systems",
-      avatar: "/placeholder.svg?height=80&width=80",
-      content:
-        "We hired Hafizur for our IoT project, and he delivered exceptional results. His knowledge of both hardware and software integration made our smart home system a reality.",
-      rating: 4,
-    },
-  ]
+ const testimonials: Testimonial[] = [
+  {
+    id: 1,
+    name: "John Smith",
+    position: "CEO",
+    company: "Tech Innovations",
+    avatar: "/placeholder.svg?height=80&width=80",
+    content:
+      "The site looks professional and performs flawlessly. Dynamic content and a powerful admin panel make managing our cybersecurity services incredibly efficient and secure.",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Mahbub Murshed",
+    position: "Founder",
+    company: "Travel Express BD",
+    avatar: "/travelexpressbd.jpeg?height=80&width=80",
+    content:
+      "The booking interface is smooth and user-friendly. Admin tools allow us to manage packages easily, helping increase engagement and streamline our business operations.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Masud Reza",
+    position: "CTO",
+    company: "SmartSpace Solutions",
+    avatar: "/placeholder.svg?height=80&width=80",
+    content:
+      "Hafiz built a secure IoT platform with MAC authentication and AI-driven automation, giving us real-time control and impressive efficiency across smart devices.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "Ariana N.",
+    position: "Security Analyst",
+    company: "Zinthe",
+    avatar: "/placeholder.svg?height=80&width=80",
+    content:
+      "The activity tracking system offers precise insights into login behavior and geo-location. It helped us boost security and understand user behavior better.",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Rayhan Kabir",
+    position: "Researcher",
+    company: "CyberTrack Lab",
+    avatar: "/placeholder.svg?height=80&width=80",
+    content:
+      "The cybersecurity insights and research on web vulnerabilities and IoT risks were spot-on. Great hands-on knowledge of tools like Burp Suite and Metasploit.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Farzana Rahman",
+    position: "Engineer",
+    company: "Smart Living Co.",
+    avatar: "/placeholder.svg?height=80&width=80",
+    content:
+      "The smart home automation project was perfectly executed. Secure APIs and MQTT integration enabled seamless remote control and future AI integration planning.",
+    rating: 5,
+  },
+];
 
   const nextSlide = () => {
     setDirection(1)
@@ -137,7 +167,7 @@ export function TestimonialsSection() {
                 animate="center"
                 exit="exit"
                 transition={{
-                  x: { type: "spring", stiffness: 300, damping: 30 },
+                  x: { type: "spring", stiffness: 500, damping: 30 },
                   opacity: { duration: 0.2 },
                 }}
                 className="w-full"

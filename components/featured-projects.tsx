@@ -7,38 +7,38 @@ import { AnimatedText } from "./animated-text"
 
 export function FeaturedProjects() {
   const featuredProjects = [
-    {
-      title: "IoT Device Management System",
-      category: "Web Development",
-      image: "/placeholder.svg?height=400&width=600",
-      link: "/projects",
-    },
-    {
-      title: "User Activity Monitoring System",
-      category: "Security",
-      image: "/placeholder.svg?height=400&width=600",
-      link: "/projects",
-    },
-    {
-      title: "IoT-Based Home Automation",
-      category: "IoT",
-      image: "/placeholder.svg?height=400&width=600",
-      link: "/projects",
-    },
-    {
-      title: "Travel Agency Website",
-      category: "Web Development",
-      image: "/placeholder.svg?height=400&width=600",
-      link: "/projects",
-    },
-  ]
+  {
+    title: "User Activity & Geo Tracking System",
+    category: "Cybersecurity, Analytics",
+    image: "/projects/user-tracking.jpg?height=400&width=600",
+    link: "/projects/user-activity-tracking",
+  },
+  {
+    title: "Smart Home Automation Platform",
+    category: "IoT, AI Automation",
+    image: "/projects/home-automation.jpg?height=400&width=600",
+    link: "/projects/home-automation",
+  },
+  {
+    title: "Travel Agency Booking Website",
+    category: "Web Development, eCommerce",
+    image: "/projects/travel-agency.jpg?height=400&width=600",
+    link: "/projects/travel-agency-website",
+  },
+  {
+    title: "IoT Device Management System",
+    category: "IoT, Web API",
+    image: "/projects/IoT.jpg?height=400&width=600",
+    link: "/projects/iot-device-management",
+  },
+]
 
   return (
     <section className="py-20" id="projects">
       <div className="container-margin">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <AnimatedText as="h2" className="section-subtitle shadow-text">
-            Portfolio
+            Projects
           </AnimatedText>
           <AnimatedText as="h3" className="section-title shadow-text-lg" delay={200}>
             Recent Work

@@ -69,7 +69,7 @@ export function Header() {
                 className="object-cover"
               />
             </div>
-            <span className="font-bold text-xl shadow-text">Elito.</span>
+            <span className="font-bold text-xl shadow-text">Hafiz</span>
           </Link>
         </div>
 

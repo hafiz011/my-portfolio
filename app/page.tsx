@@ -6,7 +6,7 @@ import { ArrowRight, ArrowLeft, ArrowRightIcon } from "lucide-react"
 import { AboutSection } from "@/components/about-section"
 import { SkillsSection } from "@/components/skills-section"
 import { FeaturedProjects } from "@/components/featured-projects"
-import { StatsSection } from "@/components/stats-section"
+// import { StatsSection } from "@/components/stats-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { ParallaxSection } from "@/components/parallax-section"
 import { motion } from "framer-motion"
@@ -132,9 +132,6 @@ export default function Home() {
 
       <AboutSection />
 
-      <ParallaxSection direction="up" baseVelocity={0.1}>
-        <StatsSection />
-      </ParallaxSection>
 
       <SkillsSection />
 
