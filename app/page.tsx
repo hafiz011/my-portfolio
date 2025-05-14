@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowRight, ArrowLeft, ArrowRightIcon } from "lucide-react"
 import { AboutSection } from "@/components/about-section"
 import { SkillsSection } from "@/components/skills-section"
+import { ServiceSection } from "@/components/service-section"
 import { FeaturedProjects } from "@/components/featured-projects"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { ParallaxSection } from "@/components/parallax-section"
@@ -148,6 +149,7 @@ export default function Home() {
       {/* Other Sections */}
       <AboutSection />
       <SkillsSection />
+      <ServiceSection />
       <ParallaxSection direction="down" baseVelocity={0.1}>
         <TestimonialsSection />
       </ParallaxSection>
