@@ -6,17 +6,18 @@ import { ArrowRight, ArrowLeft, ArrowRightIcon } from "lucide-react"
 import { AboutSection } from "@/components/about-section"
 import { SkillsSection } from "@/components/skills-section"
 import { FeaturedProjects } from "@/components/featured-projects"
-// import { StatsSection } from "@/components/stats-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { ParallaxSection } from "@/components/parallax-section"
 import { motion } from "framer-motion"
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    setIsLoaded(true)
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
+    }, 4000) // auto-slide every 4 seconds
+    return () => clearInterval(interval)
   }, [])
 
   const slides = [
@@ -50,53 +51,66 @@ export default function Home() {
 
   return (
     <>
-      <section className="min-h-screen pt-20 flex items-center relative overflow-hidden bg-background">
-        <div className="absolute top-1/2 left-8 z-10 -translate-y-1/2">
-          <button onClick={prevSlide} className="slide-nav-btn hover-scale shadow-card-hover shadow-lg hover:bg-primary hover:text-primary-foreground transition-colors z-10">
+      <section className="min-h-screen pt-24 px-4 sm:px-6 md:px-10 flex items-center relative overflow-hidden bg-background">
+        {/* Left Arrow */}
+        <div className="absolute top-1/2 left-4 z-10 -translate-y-1/2 hidden sm:block">
+          <button
+            onClick={prevSlide}
+            className="slide-nav-btn hover-scale shadow-card-hover shadow-lg hover:bg-primary hover:text-primary-foreground transition-colors z-10"
+          >
             <ArrowLeft className="h-5 w-5" />
           </button>
         </div>
 
-        <div className="absolute top-1/2 right-8 z-10 -translate-y-1/2">
-          <button onClick={nextSlide} className="slide-nav-btn hover-scale shadow-card-hover shadow-lg hover:bg-primary hover:text-primary-foreground transition-colors z-10">
+        {/* Right Arrow */}
+        <div className="absolute top-1/2 right-4 z-10 -translate-y-1/2 hidden sm:block">
+          <button
+            onClick={nextSlide}
+            className="slide-nav-btn hover-scale shadow-card-hover shadow-lg hover:bg-primary hover:text-primary-foreground transition-colors z-10"
+          >
             <ArrowRight className="h-5 w-5" />
           </button>
         </div>
 
-        <div className="container-margin grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6 z-10">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Text Section */}
+          <div className="space-y-6 text-center sm:text-left z-10">
             <motion.h2
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="section-subtitle shadow-text"
+              className="text-lg sm:text-xl font-semibold shadow-text"
             >
               {currentSlideData.subtitle}
             </motion.h2>
+
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="section-title shadow-text-lg"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold shadow-text-lg"
             >
               I am {currentSlideData.title}.
             </motion.h1>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-xl text-primary font-medium shadow-text"
+              className="text-primary text-lg sm:text-xl font-medium shadow-text"
             >
               {currentSlideData.role}
             </motion.p>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-muted-foreground max-w-lg"
+              className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto sm:mx-0"
             >
               {currentSlideData.description}
             </motion.p>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -110,15 +124,16 @@ export default function Home() {
             </motion.div>
           </div>
 
+          {/* Image Section */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="hidden lg:block relative h-[80vh] z-0"
+            className="relative h-[50vh] sm:h-[70vh] md:h-[80vh] w-full"
           >
             <div className="absolute inset-0 shadow-xl rounded-lg overflow-hidden">
               <div className="w-full h-full relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-background to-transparent z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-background to-transparent z-10" />
                 <img
                   src={currentSlideData.image || "/placeholder.svg"}
                   alt="Hero"
@@ -130,15 +145,12 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Other Sections */}
       <AboutSection />
-
-
       <SkillsSection />
-
       <ParallaxSection direction="down" baseVelocity={0.1}>
         <TestimonialsSection />
       </ParallaxSection>
-
       <FeaturedProjects />
     </>
   )

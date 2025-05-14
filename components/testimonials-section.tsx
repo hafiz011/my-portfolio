@@ -46,7 +46,7 @@ export function TestimonialsSection() {
   },
   {
     id: 3,
-    name: "Masud Reza",
+    name: "Rakibul Islam",
     position: "CTO",
     company: "SmartSpace Solutions",
     avatar: "/placeholder.svg?height=80&width=80",
