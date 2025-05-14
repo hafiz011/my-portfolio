@@ -22,9 +22,9 @@ export function AboutSection() {
   }
 
   return (
-    <section className="py-20" id="about">
-      <div className="container-margin">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+    <section className="py-16 sm:py-20" id="about">
+      <div className="container-margin px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-center space-y-3 text-center mb-8 sm:mb-12">
           <AnimatedText as="h2" className="section-subtitle shadow-text">
             About Me
           </AnimatedText>
