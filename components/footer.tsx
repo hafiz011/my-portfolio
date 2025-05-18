@@ -22,7 +22,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/"
+                href="https://github.com/hafiz011"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors hover-scale shadow-sm"
@@ -30,7 +30,7 @@ export function Footer() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="https://linkedin.com/in/dev-hafiz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors hover-scale shadow-sm"
@@ -38,7 +38,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </a>
               <Link
-                href="/contact"
+                href="mailto:hrhafij8@gmail.com"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors hover-scale shadow-sm"
               >
                 <Mail className="h-5 w-5" />
