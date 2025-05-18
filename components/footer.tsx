@@ -37,12 +37,12 @@ export function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <Link
+              <a
                 href="mailto:hrhafij8@gmail.com"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors hover-scale shadow-sm"
               >
                 <Mail className="h-5 w-5" />
-              </Link>
+              </a>
             </div>
           </AnimatedSection>
 
@@ -105,11 +105,11 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 hover-lift">
                 <Phone className="h-5 w-5 text-primary mt-1 animate-pulse-slow shadow-primary" />
-                <span className="text-muted-foreground">Contact via form</span>
+                <span className="text-muted-foreground">+8801612603007</span>
               </li>
               <li className="flex items-start gap-3 hover-lift">
                 <Mail className="h-5 w-5 text-primary mt-1 animate-pulse-slow shadow-primary" />
-                <span className="text-muted-foreground">Contact via form</span>
+                <a href="mailto:hrhafij8@gmail.com"><span className="text-muted-foreground">hrhafij8@gmail.com</span></a>
               </li>
               <li className="flex items-start gap-3 hover-lift">
                 <MapPin className="h-5 w-5 text-primary mt-1 animate-pulse-slow shadow-primary" />
