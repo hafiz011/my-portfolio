@@ -130,7 +130,7 @@ export default function ContactPage() {
             <CardContent className="space-y-4">
               <div className="flex items-center gap-4">
                 <Button variant="outline" size="icon" asChild className="shadow-sm hover-scale">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/hafiz011" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
                     <span className="sr-only">GitHub</span>
                   </a>
@@ -140,7 +140,7 @@ export default function ContactPage() {
 
               <div className="flex items-center gap-4">
                 <Button variant="outline" size="icon" asChild className="shadow-sm hover-scale">
-                  <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/dev-hafiz/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-5 w-5" />
                     <span className="sr-only">LinkedIn</span>
                   </a>
@@ -153,22 +153,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5" />
                   <span className="sr-only">Email</span>
                 </Button>
-                <span>Email (via contact form)</span>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="shadow-card">
-            <CardHeader>
-              <CardTitle>Note</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex items-start gap-3 text-amber-500">
-                <AlertCircle className="h-5 w-5 mt-0.5" />
-                <p>
-                  For security reasons, I don't display my contact information publicly. Please use the contact form or
-                  connect with me on social media.
-                </p>
+                <a href="mailto:hrhafij8@gmail.com"><span>hrhafij8@gmail.com</span></a>
               </div>
             </CardContent>
           </Card>
