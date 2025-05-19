@@ -62,7 +62,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-primary shadow-primary">
               <Image
-                src="/placeholder.svg?height=40&width=40"
+                src="/profile.jpg?height=40&width=40"
                 alt="Logo"
                 width={40}
                 height={40}

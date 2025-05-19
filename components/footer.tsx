@@ -12,7 +12,7 @@ export function Footer() {
           <AnimatedSection direction="up">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-primary shadow-primary">
-                <img src="/placeholder.svg?height=40&width=40" alt="Logo" className="object-cover" />
+                <img src="/profile.jpg?height=40&width=40" alt="Logo" className="object-cover" />
               </div>
               <span className="font-bold text-xl shadow-text">Hafiz</span>
             </Link>
