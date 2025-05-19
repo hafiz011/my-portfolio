@@ -131,112 +131,113 @@ export default function ResumePage() {
               <CardTitle>Technical Skills</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-medium mb-2">Programming Languages & Frameworks</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>C#</Badge>
-                    <Badge>.NET & ASP.NET Core </Badge>
-                    <Badge>Entity Framework</Badge>
-                    <Badge>JavaScript</Badge>
-                    <Badge>Python</Badge>
-                    <Badge>React</Badge>
-                    <Badge>Razor Pages</Badge>
-                    <Badge>Blazor</Badge>
-                    <Badge>Embedded C/C++</Badge>
-                    <Badge>MQTT</Badge>
-                    <Badge>REST APIs</Badge>
-                  </div>
-                </div>
+              <CardContent>
+                <div className="space-y-4">
 
-                <div>
-                  <h3 className="font-medium mb-2">Web & Full Stack Development</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>Full Stack Web Application Development</Badge>
-                    <Badge>Microservices Architecture</Badge>
-                    <Badge>Responsive UI</Badge>
-                    <Badge>API Development & Integration</Badge>
+                  <div>
+                    <h3 className="font-medium mb-2">Programming Languages</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>C#</Badge>
+                      <Badge>JavaScript</Badge>
+                      <Badge>Python</Badge>
+                      <Badge>Embedded C/C++</Badge>
+                    </div>
                   </div>
-                </div>
 
-                {/* Databases */}
-                <div>
-                  <h3 className="font-medium mb-2">Database Technologies</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>MongoDB</Badge>
-                    <Badge>MySQL</Badge>
-                    <Badge>LINQ</Badge>
-                    <Badge>Database Schema Design</Badge>
-                    <Badge>Query Optimization and Data Modeling</Badge>
+                  <div>
+                    <h3 className="font-medium mb-2">Frameworks</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>.NET</Badge>
+                      <Badge>Entity Framework</Badge>
+                      <Badge>React</Badge>
+                      <Badge>Razor Pages</Badge>
+                      <Badge>Blazor</Badge>
+                    </div>
                   </div>
-                </div>
 
-                {/* DevOps/Cloud */}
-                <div>
-                  <h3 className="font-medium mb-2">Cloud & DevOps</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>AWS</Badge>
-                    <Badge>Microsoft Azure</Badge>
-                    <Badge>Docker</Badge>
-                    <Badge>Kubernetes</Badge>
-                    <Badge>Infrastructure as Code & Cloud Security</Badge>
+                  <div>
+                    <h3 className="font-medium mb-2">Web & Full Stack Development</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>Full Stack Web App Development with Microservices</Badge>
+                      <Badge>Responsive UI Design</Badge>
+                      <Badge>API Development & Integration</Badge>
+                    </div>
                   </div>
-                </div>
 
-                {/* Cybersecurity */}
-                <div>
-                  <h3 className="font-medium mb-2">Cybersecurity & DevSecOps</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>Penetration Testing</Badge>
-                    <Badge>Vulnerability Assessment</Badge>
-                    <Badge>Secure Coding Practices</Badge>
-                    <Badge>Privilege Escalation</Badge>
-                    <Badge>Digital Forensics</Badge>
-                    <Badge>Network Security</Badge>
-                    <Badge>MAC/Token-Based Device Authentication</Badge>
+                  <div>
+                    <h3 className="font-medium mb-2">Database Technologies</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>MongoDB</Badge>
+                      <Badge>MySQL</Badge>
+                      <Badge>LINQ</Badge>
+                      <Badge>Database Schema Design</Badge>
+                      <Badge>Query Optimization and Data Modeling</Badge>
+                    </div>
                   </div>
-                </div>
 
-                {/* Operating Systems & Administration */}
-                <div>
-                  <h3 className="font-medium mb-2">Operating Systems & Administration</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>Linux Server Administration (Ubuntu, CentOS, Red Hat)</Badge>
-                    <Badge>Windows Server Setup & Maintenance</Badge>
-                    <Badge>Bash/Shell Scripting</Badge>
-                    <Badge>System Monitoring</Badge>
+                  <div>
+                    <h3 className="font-medium mb-2">Cloud & DevOps</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>AWS</Badge>
+                      <Badge>Azure</Badge>
+                      <Badge>Docker</Badge>
+                      <Badge>Kubernetes</Badge>
+                      <Badge>Infrastructure as Code</Badge>
+                      <Badge>Bash Scripting</Badge>
+                      <Badge>Cloud Security</Badge>
+                    </div>
                   </div>
-                </div>
 
-                {/* IoT & Embedded Systems */}
-                <div>
-                  <h3 className="font-medium mb-2">IoT & Embedded Systems</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>Sensor Integration</Badge>
-                    <Badge>Embedded System Design</Badge>
-                    <Badge>Microcontrollers Programming</Badge>
-                    <Badge>PCBA Repair (L1–L4)</Badge>
-                    <Badge>MQTT Communication</Badge>
-                    <Badge>Secure IoT Device Management</Badge>
+                  <div>
+                    <h3 className="font-medium mb-2">Cybersecurity & DevSecOps</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>Penetration Testing</Badge>
+                      <Badge>Vulnerability Assessment</Badge>
+                      <Badge>Secure Coding Practices</Badge>
+                      <Badge>Privilege Escalation</Badge>
+                      <Badge>Network Security</Badge>
+                    </div>
                   </div>
-                </div>
 
-                <div>
-                  <h3 className="font-medium mb-2">Tools & Technologies</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>Visual Studio</Badge>
-                    <Badge>VS Code</Badge>
-                    <Badge>Postman</Badge>
-                    <Badge>Git</Badge>
-                    <Badge>GitHub</Badge>
-                    <Badge>Swagger</Badge>
-                    <Badge>Wireshark</Badge>
-                    <Badge>Nmap</Badge>
-                    <Badge>OWASP</Badge>
-                    <Badge>Burp Suite</Badge>
+                  <div>
+                    <h3 className="font-medium mb-2">OS & Server Administration</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>Linux (Ubuntu, CentOS, RHEL)</Badge>
+                      <Badge>Windows Server Configuration</Badge>
+                      <Badge>Bash/Shell Scripting</Badge>
+                      <Badge>System Monitoring</Badge>
+                    </div>
                   </div>
+
+                  <div>
+                    <h3 className="font-medium mb-2">IoT & Embedded Systems</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>Sensor & Microcontroller Integration</Badge>
+                      <Badge>Embedded System Design</Badge>
+                      <Badge>Secure IoT Device Management via MQTT</Badge>
+                      <Badge>PCBA Repair (L1–L4)</Badge>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-medium mb-2">Tools & Technologies</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>Visual Studio</Badge>
+                      <Badge>VS Code</Badge>
+                      <Badge>Postman</Badge>
+                      <Badge>Git</Badge>
+                      <Badge>GitHub</Badge>
+                      <Badge>Swagger</Badge>
+                      <Badge>Wireshark</Badge>
+                      <Badge>Nmap</Badge>
+                      <Badge>Burp Suite</Badge>
+                      <Badge>OWASP ZAP & Top 10 Security Practices</Badge>
+                    </div>
+                  </div>
+
                 </div>
-              </div>
+              </CardContent>
+
             </CardContent>
           </Card>
 
