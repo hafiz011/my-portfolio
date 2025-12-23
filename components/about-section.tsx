@@ -85,7 +85,7 @@ export function AboutSection() {
               <Card className="bg-card transition-colors shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
-                    <CounterUp end={4} suffix="+" />
+                    <CounterUp end={5} suffix="+" />
                   </h4>
                   <p className="text-muted-foreground">Years of Experience</p>
                 </CardContent>
@@ -96,7 +96,7 @@ export function AboutSection() {
               <Card className="bg-card transition-colors shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
-                    <CounterUp end={31} suffix="+" delay={200} />
+                    <CounterUp end={35} suffix="+" delay={200} />
                   </h4>
                   <p className="text-muted-foreground">Projects Completed</p>
                 </CardContent>
@@ -118,7 +118,7 @@ export function AboutSection() {
               <Card className="bg-card transition-colors shadow-card-hover">
                 <CardContent className="p-6 text-center">
                   <h4 className="text-5xl font-bold text-primary mb-2 shadow-text">
-                    <CounterUp end={3} suffix="+" delay={600} />
+                    <CounterUp end={5} suffix="+" delay={600} />
                   </h4>
                   <p className="text-muted-foreground">Certifications</p>
                 </CardContent>
