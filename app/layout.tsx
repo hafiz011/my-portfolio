@@ -10,10 +10,34 @@ import { PageTransition } from "@/components/page-transition"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Md Hafizur Rahman - Portfolio",
-  description: "Professional portfolio of Md Hafizur Rahman - .NET Developer & Cybersecurity Specialist",
-    generator: 'v0.dev'
-}
+  title: "Md Hafizur Rahman | Software Engineer & Cybersecurity Specialist",
+  description: "Explore the professional portfolio of Md Hafizur Rahman, showcasing expertise in software engineering, .NET development, and cybersecurity solutions. View projects, skills, and contact information.",
+  keywords: ["Md Hafizur Rahman", "Software Engineer", "Cybersecurity Specialist", ".NET Developer", "Web Developer", "Portfolio", "Application Security"],
+  authors: [{ name: "Md Hafizur Rahman" }],
+  generator: "v0.dev",
+  openGraph: {
+    title: "Md Hafizur Rahman | Software Engineer & Cybersecurity Specialist",
+    description: "Professional portfolio of Md Hafizur Rahman highlighting software engineering, .NET development, and cybersecurity expertise.",
+    url: "https://eng-hafiz-portfolio.vercel.app",
+    siteName: "Md Hafizur Rahman Portfolio",
+    images: [
+      {
+        url: "https://eng-hafiz-portfolio.vercel.app/hafiz.jpg",
+        width: 641,
+        height: 630,
+        alt: "Md Hafizur Rahman Portfolio"
+      }
+    ],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Md Hafizur Rahman | Software Engineer & Cybersecurity Specialist",
+    description: "Professional portfolio of Md Hafizur Rahman highlighting software engineering, .NET development, and cybersecurity expertise.",
+    images: ["https://eng-hafiz-portfolio.vercel.app/hafiz.jpg"],
+    creator: "@YourTwitterHandle"
+  }
+};
 
 export default function RootLayout({
   children,
