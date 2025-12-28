@@ -7,79 +7,102 @@ import { AnimatedText } from "./animated-text"
 
 export function FeaturedProjects() {
   const featuredProjects = [
-  {
-    title: "User Activity & Geo Tracking System",
-    category: "Cybersecurity, Analytics",
-    image: "/projects/user-tracking.jpg?height=400&width=600",
-    link: "/projects/user-activity-tracking",
-  },
-  {
-    title: "Smart Home Automation Platform",
-    category: "IoT, AI Automation",
-    image: "/projects/home-automation.jpg?height=400&width=600",
-    link: "/projects/home-automation",
-  },
-  {
-    title: "Travel Agency Booking Website",
-    category: "Web Development, eCommerce",
-    image: "/projects/travel-agency.jpg?height=400&width=600",
-    link: "/projects/travel-agency-website",
-  },
-  {
-    title: "IoT Device Management System",
-    category: "IoT, Web API",
-    image: "/projects/IoT.jpg?height=400&width=600",
-    link: "/projects/iot-device-management",
-  },
-]
+    {
+      title: "User Activity & Geo Tracking System",
+      category: "Cybersecurity, Analytics",
+      image: "/projects/user-tracking.jpg",
+      link: "/projects/user-activity-tracking",
+    },
+    {
+      title: "BloodBD - Blood Donation Platform",
+      category: "Web Application, Healthcare",
+      image: "/projects/bloodbd.jpg",
+      link: "/projects/bloodbd-platform",
+    },
+    {
+      title: "Travel Agency Booking Website",
+      category: "Web Development, eCommerce",
+      image: "/projects/travel-agency.jpg",
+      link: "/projects/travel-agency-website",
+    },
+    {
+      title: "IoT Device Management System",
+      category: "IoT, Web API",
+      image: "/projects/IoT.jpg",
+      link: "/projects/iot-device-management",
+    },
+  ]
 
   return (
-    <section className="py-20" id="projects">
+    <section className="py-24 bg-background/95" id="projects">
       <div className="container-margin">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <AnimatedText as="h2" className="section-subtitle shadow-text">
-            Projects
+        {/* Section Header */}
+        <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
+          <AnimatedText as="h2" className="section-subtitle shadow-text text-primary/80">
+            My Projects
           </AnimatedText>
-          <AnimatedText as="h3" className="section-title shadow-text-lg" delay={200}>
-            Recent Work
+          <AnimatedText as="h3" className="section-title shadow-text-lg max-w-3xl">
+            Crafting Digital Experiences with Purpose
+          </AnimatedText>
+          <AnimatedText as="p" className="text-muted-foreground max-w-2xl text-lg" delay={300}>
+            Here are some of my recent works that showcase innovation, clean design, and robust functionality.
           </AnimatedText>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Projects Grid - 4 columns */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto"> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {featuredProjects.map((project, index) => (
-            <AnimatedSection key={index} delay={index * 100} direction={index % 2 === 0 ? "up" : "down"}>
-              <div className="group relative overflow-hidden rounded-lg hover-lift shadow-card-hover">
-                <div className="aspect-square relative">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4 text-white">
-                    <span className="text-primary text-sm mb-2 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-100 shadow-text">
+            <AnimatedSection
+              key={index}
+              delay={index * 150}
+              direction={index % 2 === 0 ? "up" : "down"}
+              className="group"
+            >
+              <Link href={project.link} className="block h-full">
+                <div className="relative rounded-2xl bg-card transition-colors shadow-card-hover duration-500 hover:-translate-y-4 overflow-hidden flex flex-col h-full">
+                  {/* Image - Full visible, no crop */}
+                  <div className="aspect-[4/3] relative overflow-hidden bg-muted/40 flex items-center justify-center">
+                    <img
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      className="object-contain w-full h-full p-6 transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Content Below Image */}
+                  <div className="p-6 flex flex-col flex-grow">
+                    {/* Category Badge */}
+                    <span className="inline-block px-4 py-1.5 mb-3 text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary rounded-full w-fit">
                       {project.category}
                     </span>
-                    <h3 className="text-xl font-bold mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-200 shadow-text">
+
+                    {/* Title */}
+                    <h3 className="text-xl font-bold text-foreground mb-4 line-clamp-2">
                       {project.title}
                     </h3>
-                    <Link
-                      href={project.link}
-                      className="text-white hover:text-primary transition-colors transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 delay-300 shadow-primary"
-                    >
-                      <ArrowRight className="h-6 w-6 animate-pulse-slow" />
-                    </Link>
+
+                    {/* View Project Link */}
+                    <div className="mt-auto flex items-center text-primary font-medium opacity-80 group-hover:opacity-100 transition-opacity">
+                      <span className="text-sm mr-2">View Project</span>
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </AnimatedSection>
           ))}
         </div>
 
-        <div className="flex justify-center mt-12">
-          <AnimatedSection delay={400}>
-            <Link href="/projects" className="btn-primary hover-lift shadow-primary-hover">
+        {/* View All Button */}
+        <div className="flex justify-center mt-16">
+          <AnimatedSection delay={600}>
+            <Link
+              href="/projects"
+              className="group/btn inline-flex items-center gap-3 px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg hover:shadow-primary/30 hover:bg-primary/90 transition-all duration-300 hover:scale-105"
+            >
               View All Projects
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
             </Link>
           </AnimatedSection>
         </div>
