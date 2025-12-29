@@ -150,10 +150,10 @@ export default function Home() {
       <AboutSection />
       <SkillsSection />
       <ServiceSection />
+      <FeaturedProjects />
       <ParallaxSection direction="down" baseVelocity={0.1}>
         <TestimonialsSection />
       </ParallaxSection>
-      <FeaturedProjects />
     </>
   )
 }
