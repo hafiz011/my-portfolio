@@ -144,6 +144,7 @@ export default function TracklyProjectPage() {
             </p>
           </div>
 
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="relative overflow-hidden rounded-2xl shadow-xl h-80 bg-muted">
               <Image
