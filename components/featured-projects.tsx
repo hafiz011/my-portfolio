@@ -126,20 +126,6 @@ export function FeaturedProjects() {
             </AnimatedSection>
           ))}
         </div>
-
-        {/* View All Button */}
-        {/* <div className="flex justify-center mt-16">
-          <AnimatedSection delay={600}>
-            <Link
-              href="/projects"
-              className="group/btn inline-flex items-center gap-3 px-8 py-4 bg-primary text-white font-semibold rounded-full shadow-lg hover:shadow-primary/30 hover:bg-primary/90 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-primary/50"
-              aria-label="View all my projects"
-            >
-              View All Projects
-              <ArrowRight className="h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
-            </Link>
-          </AnimatedSection>
-        </div> */}
       </div>
     </section>
   )
