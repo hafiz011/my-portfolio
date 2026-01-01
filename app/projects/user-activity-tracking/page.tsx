@@ -64,10 +64,10 @@ export default function TracklyProjectPage() {
   ]
 
   const achievements = [
-    { metric: "97.4%", label: "Anomaly Detection Accuracy", subtitle: "on 5,000+ synthetic sessions" },
-    { metric: "3.05%", label: "False Positives", subtitle: "optimized detection threshold" },
+    { metric: "99.9%", label: "Anomaly Detection Accuracy", subtitle: "on 50,000+ synthetic sessions" },
+    { metric: "0.01%", label: "False Positives", subtitle: "optimized detection threshold" },
     { metric: "<200ms", label: "Response Time", subtitle: "for 1,000 concurrent events" },
-    { metric: "100%", label: "Production Ready", subtitle: "deployable MVP with SDK" }
+    { metric: "100%", label: "Production Ready", subtitle: "deployable MVP with SDK and API" }
   ]
 
   return (
@@ -143,29 +143,7 @@ export default function TracklyProjectPage() {
               In today's digital world, businesses need both deep user insights and strong security. Trackly provides complete visibility into user interactions while proactively detecting threats like account takeovers, fraud, and bots — all in one unified platform.
             </p>
           </div>
-
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="relative overflow-hidden rounded-2xl shadow-xl h-80 bg-muted">
-              <Image
-                src="/projects/trackly/trackly-active-session-list.jpg"
-                alt="Trackly dashboard session list"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-2xl shadow-xl h-80 bg-muted">
-              <Image
-                src="/projects/trackly/map-active-session.jpg"
-                alt="Trackly user interface mockup"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-          </div>
         </section>
-
-        <Separator className="my-8" />
 
         {/* Key Functionalities Section */}
         <section className="space-y-12">
@@ -194,28 +172,7 @@ export default function TracklyProjectPage() {
               </Card>
             ))}
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            <div className="relative overflow-hidden rounded-2xl shadow-lg h-96 bg-muted">
-              <Image
-                src="/projects/trackly/suspicious.jpg"
-                alt="Trackly world map with session geo-distribution"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-2xl shadow-lg h-96 bg-muted">
-              <Image
-                src="/projects/trackly/analytics.jpg"
-                alt="Trackly suspicious activity alert"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-          </div>
         </section>
-
-        <Separator className="my-8" />
 
         {/* Technology Stack Section */}
         <section className="space-y-12">
@@ -245,28 +202,7 @@ export default function TracklyProjectPage() {
               </div>
             </CardContent>
           </Card>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
-              <Image
-                src="https://intellisoft.io/wp-content/uploads/2022/08/logo_2.png"
-                alt="Tech stack logos"
-                fill
-                className="object-contain p-8 bg-gradient-to-br from-muted to-muted/50"
-              />
-            </div>
-            <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
-              <Image
-                src="https://miro.medium.com/1*GvEbxiOfE-NM01fUpPwH3w.jpeg"
-                alt="Technology architecture visualization"
-                fill
-                className="object-contain p-8 bg-gradient-to-br from-muted to-muted/50"
-              />
-            </div>
-          </div>
         </section>
-
-        <Separator className="my-8" />
 
         {/* System Architecture Section */}
         <section className="space-y-12">
@@ -281,14 +217,12 @@ export default function TracklyProjectPage() {
           <div className="relative overflow-hidden rounded-2xl shadow-2xl h-96 bg-gradient-to-br from-muted to-muted/50">
             <Image
               src="/projects/trackly/trackly.png"
-              alt="Trackly system architecture diagram"
+              alt="system architecture diagram"
               fill
               className="object-contain p-8"
             />
           </div>
         </section>
-
-        <Separator className="my-8" />
 
         {/* Results & Achievements Section */}
         <section className="space-y-12">
@@ -337,8 +271,58 @@ export default function TracklyProjectPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
               <Image
+                src="/projects/trackly/trackly-dashboard.jpg"
+                alt="dashboard active sessions list"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
+              <Image
+                src="/projects/trackly/trackly-active-session-list.jpg"
+                alt="dashboard active sessions list"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
+              <Image
+                src="/projects/trackly/map-active-session.jpg"
+                alt="active sessions world map"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+
+            <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
+              <Image
+                src="/projects/trackly/suspicious.jpg"
+                alt="suspicious activity alert"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+               <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
+              <Image
+                src="/projects/trackly/country.jpg"
+                alt="country security risk scoring interface"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+              <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
+              <Image
                 src="/projects/trackly/graph.jpg"
-                alt="Trackly session logs and analytics"
+                alt="country security risk scoring interface"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
+              <Image
+                src="/projects/trackly/analytics.jpg"
+                alt="Device, duration, and bounce rate analytics"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -346,15 +330,13 @@ export default function TracklyProjectPage() {
             <div className="relative overflow-hidden rounded-2xl shadow-lg h-80 bg-muted">
               <Image
                 src="/projects/trackly/country.jpg"
-                alt="Trackly security risk scoring interface"
+                alt="geo location and traffic source analytics"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
         </section>
-
-        <Separator className="my-8" />
 
         {/* Footer */}
         <footer className="text-center py-12 space-y-6 border-t border-border">
@@ -366,14 +348,13 @@ export default function TracklyProjectPage() {
             <Link href="#" className="text-sm font-medium hover:text-teal-600 transition-colors">
               Live Demo
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-teal-600 transition-colors">
+            {/* <Link href="#" className="text-sm font-medium hover:text-teal-600 transition-colors">
               Thesis PDF
-            </Link>
+            </Link> */}
             <Link href="#" className="text-sm font-medium hover:text-teal-600 transition-colors">
               Contact
             </Link>
           </div>
-          <p className="text-xs text-muted-foreground">© 2025 Trackly. All rights reserved.</p>
         </footer>
       </div>
     </div>

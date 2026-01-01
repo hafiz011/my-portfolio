@@ -1,3 +1,4 @@
+// components/featured-projects.tsx
 "use client"
 
 import Link from "next/link"
@@ -127,7 +128,7 @@ export function FeaturedProjects() {
         </div>
 
         {/* View All Button */}
-        <div className="flex justify-center mt-16">
+        {/* <div className="flex justify-center mt-16">
           <AnimatedSection delay={600}>
             <Link
               href="/projects"
@@ -138,7 +139,7 @@ export function FeaturedProjects() {
               <ArrowRight className="h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
             </Link>
           </AnimatedSection>
-        </div>
+        </div> */}
       </div>
     </section>
   )
